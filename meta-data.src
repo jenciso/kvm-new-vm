@@ -1,0 +1,10 @@
+instance-id: ${VM}
+local-hostname: ${VM}
+
+network-interfaces: |
+  iface eth0 inet static
+  address ${IPADDR}
+  network 10.253.253.0
+  netmask 255.255.255.0
+  broadcast 10.253.253.255
+  gateway 10.253.253.41
