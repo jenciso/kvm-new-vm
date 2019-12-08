@@ -8,4 +8,4 @@ D=/data/vms
 virsh shutdown $VM
 virsh undefine $VM
 virsh pool-destroy $VM
-rm -ri $D/$VM
+rm -rf $D/$VM
