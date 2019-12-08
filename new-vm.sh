@@ -35,3 +35,5 @@ virt-install --import --name $VM \
 --os-variant=centos7.0 \
 --graphics spice \
 --noautoconsole
+
+virsh autostart $VM
