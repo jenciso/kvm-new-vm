@@ -17,3 +17,8 @@ Post install
 virsh change-media $VM hda --eject --config
 rm -f $D/$VM/$VM-cidata.iso
 ```
+
+To delete vm
+```
+./delete-vm.sh
+```
