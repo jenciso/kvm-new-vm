@@ -1,17 +1,17 @@
 #!/bin/sh
 
+#### Variables
+VM=centos7
+IPADDR=10.253.253.61
 D=/data/vms
-VM=punto8
 DISK_SIZE=20G
-IPADDR=10.253.253.63
+####
 
 export VM=$VM
 export IPADDR=$IPADDR
 
 envsubst < user-data.src > user-data
 envsubst < meta-data.src > meta-data
-
-virsh pool-destroy $VM
 
 mkdir $D/$VM
 cp /var/lib/libvirt/boot/CentOS-7-x86_64-GenericCloud.qcow2 $D/$VM/$VM.qcow2
