@@ -1,3 +1,5 @@
+#!/bin/sh
+
 D=/data/vms
 VM=punto8
 DISK_SIZE=20G
@@ -33,6 +35,3 @@ virt-install --import --name $VM \
 --os-variant=centos7.0 \
 --graphics spice \
 --noautoconsole
-
-#virsh change-media $VM hda --eject --config
-#rm meta-data user-data centos7-vm1-cidata.iso
