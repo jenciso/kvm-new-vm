@@ -1,0 +1,8 @@
+#cloud-config
+
+# Hostname management
+preserve_hostname: False
+hostname: ${VM}
+fqdn: ${VM}.beemovil.in
+
+

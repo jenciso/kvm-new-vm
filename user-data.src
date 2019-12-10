@@ -1,17 +1,10 @@
-#cloud-config
- 
-# Hostname management
-preserve_hostname: False
-hostname: ${VM}
-fqdn: ${VM}.beemovil.in
-
 # Users
 users:
   - name: centos
     groups: ['wheel']
     shell: /bin/bash
     lock_passwd: false
-    passwd: $6$saltsalt$e58wgiV9lZJSubjULHg0Cpg/LdQR1j2BLZ9xmyr2MpK/HkEvvWO6vWp5SExrpHXYBHPzxKa/aLe7.OcLZK1xF0
+    passwd: $1$SaltSalt$oFx3W9m5BarBcUwmyD7CZ.
     sudo: ALL=(ALL) NOPASSWD:ALL
     ssh-authorized-keys:
       - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIH5qZRAHKwWWO/b8i2L2hIcPQOWb/nuBX9BJcDt0Dzym VM Login ssh key
