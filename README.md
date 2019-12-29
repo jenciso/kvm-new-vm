@@ -22,3 +22,12 @@ To delete vm
 ```
 ./delete-vm.sh
 ```
+
+
+### Notes:
+
+In any moment you could to pause or break your download, in order to continue the process, use -c flag
+
+```
+sudo wget -c http://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud.qcow2   -O /var/lib/libvirt/boot/CentOS-7-x86_64-GenericCloud.qcow2
+```
